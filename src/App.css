@@ -1,9 +1,9 @@
-body{
-background-image: url("cat.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: 1350px;
-margin-bottom: 25%;
+body {
+  background-image: url("cat.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1350px;
+  margin-bottom: 25%;
 }
 
 .card {
@@ -18,9 +18,53 @@ margin-bottom: 25%;
   border-radius: 10px;
   border-bottom: 3px solid springgreen;
   background: aquamarine;
- }
+}
   
- .activeCard {
+.activeCard {
   color: red;
   background: pink;
- }
+}
+
+.textname {
+  box-sizing: border-box;
+  text-align: center;
+  width: 50%;
+  margin: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-size: 1em;
+  border-radius: 10px;
+  border-bottom: 3px solid maroon;
+  background: coral;
+  margin-left: 25%;
+}
+ 
+.box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.button {
+  border: none;
+  padding: 5px;
+  width: 5%;
+  margin-left: 48%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #BC5449;
+  color:#4C0805;
+  border: 2px solid #E2252B;
+  border-radius: 10px;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ans {
+  text-align: center;
+  color: #4C0805;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-style: italic;
+}
