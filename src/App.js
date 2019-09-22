@@ -5,7 +5,7 @@ import CharacterCard from './CharacterCard';
 import './App.css';
 import _ from 'lodash';
  
-const message = 'engineer'
+const message = 'reflection'
  
 const prepareStateFromWord = (given_word) => {
   let word = given_word.toUpperCase()
@@ -21,11 +21,12 @@ const prepareStateFromWord = (given_word) => {
 }
  
 class App extends React.Component {
- 
   state = {
     show: false,
-    give_up: false
+    give_up: false,
+    hint: false
   }
+  hint = () => {this.setState({hint: !this.state.hint})}
  state = prepareStateFromWord(message);
   click = (value) => {
     let guess = [...this.state.guess, value]
@@ -88,11 +89,14 @@ class App extends React.Component {
         }
         <div>
           <Cmpcard check_count={this.state.counter}/>
-        </div> 
+        </div>
         <div>
           {test}
-          
           {tests}
+        </div>
+        <div className="box">
+          <button className="button" onClick={this.hint}>HINT</button>
+          {this.state.hint === true ? <p className="ans">Things to see in the mirror</p> : <p></p>}
         </div>
       </div>
     )
