@@ -42,14 +42,15 @@ body {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+ 
 }
 
 .button {
   border: none;
-  padding: 5px 10px;
   margin: 4px 2px;
   text-align: center;
-  margin-left: 46%;
+  margin-left: 45%;
+  width: 10%;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
