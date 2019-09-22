@@ -3,7 +3,7 @@ import CharacterCard from './CharacterCard';
 import './App.css';
 import _ from 'lodash';
 
-let massage = 'Hello'
+const massage = 'REFLECTION'
 
 const prepareStateFromWord = (given_word) => {
   let word = given_word.toUpperCase()
@@ -33,6 +33,7 @@ class App extends React.Component {
   }
 
   render() {
+  //  let test = this.state.completed === false ? '' : <button className="button" onClick={this.reset}><h2>Restart</h2></button>;
     return (
       <div>
         {
