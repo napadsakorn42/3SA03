@@ -10,10 +10,10 @@ class CharacterCard extends React.Component {
         this.setState({
             active: !this.state.active
         });
-
+//fdfdf
         this.props.activationHandler(this.props.value);
     }
-    
+
     render() {
         let activeClass = this.state.active ? 'activeCard' : '';
         let className = `card ${activeClass}`
