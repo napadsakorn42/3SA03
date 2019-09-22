@@ -4,16 +4,20 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: 1350px;
 margin-bottom: 25%;
-
 }
+
 .card {
   display: inline-block;
   text-align: center;
   width: 3em;
   font-size: 2em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 1em;
+  margin: 0.5em;
   user-select: none;
+  cursor: pointer;
+  border-radius: 10px;
+  border-bottom: 3px solid springgreen;
+  background: aquamarine;
  }
   
  .activeCard {
