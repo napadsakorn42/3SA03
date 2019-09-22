@@ -1,24 +1,36 @@
 import React from 'react';
-
+import './App.css';
 class CharacterCard extends React.Component {
 
     state = {
         active: false
     }
 
-    activete = () => {
+    activate = () => {
         this.setState({
-            active: !this.state.active
+            active: true
         });
-        this.props.activationHandler(this.props.value);
+        if (this.props.number > 3) {
+            this.setState({
+                active: true
+            });
+        }
+        else if (this.state.active === false)
+            this.props.click(this.props.value);
+    }
+    componentDidUpdate = (prevProps) => {
+        if (prevProps.number !==this.props.number || prevProps.check !== this.props.check) {
+            this.setState({active: false})
+            console.log('...');
+        }
     }
 
     render() {
         let activeClass = this.state.active ? 'activeCard' : '';
-        let className = `card ${activeClass}`
+        let className = `card ${activeClass}`;
         return (
-            <div className={className} onClick={this.activete}>
-                {this.props.value}
+            <div className={className} onClick={this.activate}>
+                <h2>{this.props.value}</h2>
             </div>
         )
     }
