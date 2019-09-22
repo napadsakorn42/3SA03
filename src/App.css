@@ -2,32 +2,32 @@ body {
   background-image: url("cat.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1350px;
-  margin-bottom: 25%;
+  background-size: 1550px;
+ 
 }
-
 .card {
   display: inline-block;
   text-align: center;
-  width: 3em;
-  font-size: 2em;
+  width: 3.5em;
+  font-size: 1.5em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 0.5em;
+  margin: 1em;
   user-select: none;
   cursor: pointer;
   border-radius: 10px;
   border-bottom: 3px solid springgreen;
   background: aquamarine;
-}
   
+}
 .activeCard {
   color: red;
   background: pink;
 }
-
 .textname {
+  margin-bottom: 3%;
   box-sizing: border-box;
   text-align: center;
+  margin: 4px 2px;
   width: 50%;
   margin: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -37,7 +37,6 @@ body {
   background: coral;
   margin-left: 25%;
 }
- 
 .box {
   display: flex;
   justify-content: center;
@@ -47,17 +46,17 @@ body {
 
 .button {
   border: none;
-  padding: 5px;
-  width: 5%;
-  margin-left: 48%;
+  padding: 5px 10px;
+  margin: 4px 2px;
   text-align: center;
+  margin-left: 46%;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   background-color: #BC5449;
   color:#4C0805;
   border: 2px solid #E2252B;
-  border-radius: 10px;
+  border-radius: 12px;
   text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -67,4 +66,21 @@ body {
   text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   font-weight: bold;
   font-style: italic;
+}
+
+.sel {
+  text-align: center;
+}
+
+.count {
+  text-align: center;
+  color: #4C0805;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.win{
+  text-align: center;
+  color: #4C0805;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-weight: bold;
 }
